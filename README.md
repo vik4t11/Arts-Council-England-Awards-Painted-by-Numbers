@@ -115,3 +115,18 @@ Data-time columns took a moment to adjust accordingly due to a misunderstanding 
 **Feature Engineering**
 
 *Selecting classification tiers for award amount* - https://www.slideshare.net/slideshow/ch-7-tertile-quartile-and-percentiledoc/264658868
+
+**Machine Learning Model**
+
+*Random Forest* - https://www.ibm.com/think/topics/random-forest
+
+*Classification evaluation using scikit-learn* - https://www.ibm.com/think/topics/scikit-learn
+
+*Model evaluation methodolgy* - https://medium.com/analytics-vidhya/evaluating-a-random-forest-model-9d165595ad56
+
+*Machine Learning steps* - https://github.com/IBM/ml-learning-path-assets/blob/master/examples/classification_start_to_end_with_scikit_learn.ipynb
+
+*Random Forest feature importance* - https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html
+
+*Preprocessing OneHotEncoder documentation* - https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder
+
