@@ -76,6 +76,14 @@ The questions below will move between descriptive and diagnostic analysis to pri
 
 Data-time columns took a moment to adjust accordingly due to a misunderstanding with built-in Copilot on the task to modify code. Stack Overflow informed me on the difference between <code>normalize()</code> and <code>.dt.date</code> usage. 
 
+## AI Usage
+
+ETL and EDA is predominantly produced using the sources included in the credits section with in-built Copilot modification applied to improve UX design for visualisations and adding comments to code. 
+
+In the ML Model notebook Chat GPT and Copilot support the majority of the workflow to write code and interpret results. This challenged my original intention to reduce scraping the internet from websites such as Stack Overflow who are impacted by the lack of credit to engineers who wrote original code. 
+
+With this being said, due to the assessment criteria requirement AI collaboration is clearly demonstrated to speed up the process, which would reduce timely costs for organisations and help them reach their business requirements much quicker with advanced AI accessibility.
+
 ## Credits 
 
 **Extract, Transform and Load**
