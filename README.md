@@ -83,19 +83,19 @@ https://public.tableau.com/views/ArtsCouncilEnglandAwardsPaintedByNumbers/ACECre
 **Page 1 — Mapping ACE Awards** Explore how ACE National Lottery Project Grants are distributed across geographic areas, highlighting regional differences in award numbers and amounts.
 
 <p align="center">
-  <img src="/Users/admin/Documents/Code Institute/ace_project/tableau_sheets/1_landscape_of_arts_funding.png" alt="Arts Council England Funding Dashboard" width="800">
+  <img src="/Users/admin/Documents/Code Institute/ace_project/tableau_sheets/1_landscape_of_arts_funding.jpeg" alt="Arts Council England Funding Dashboard" width="800">
 </p>
 
 **Page 2 — Funding Across Artforms** Compare award amounts across main artistic disciplines and funding streams to identify differences in funding levels and variation.
 
 <p align="center">
-  <img src="/Users/admin/Documents/Code Institute/ace_project/tableau_sheets/2_inside_the_funding_mix.png" alt="Arts Council England Funding Dashboard" width="800">
+  <img src="/Users/admin/Documents/Code Institute/ace_project/tableau_sheets/2_inside_the_funding_mix.jpeg" alt="Arts Council England Funding Dashboard" width="800">
 </p>
 
 **Page 3 — What Shapes Award Size?** Use Random Forest feature importance to identify which categorical characteristics contribute most to predicting award size and reveal patterns that intiate further consideration.
 
 <p align="center">
-  <img src="/Users/admin/Documents/Code Institute/ace_project/tableau_sheets/3_ml_model_performance.png" alt="Arts Council England Funding Dashboard" width="800">
+  <img src="/Users/admin/Documents/Code Institute/ace_project/tableau_sheets/3_ml_model_performance.jpeg" alt="Arts Council England Funding Dashboard" width="800">
 </p>
 
 
