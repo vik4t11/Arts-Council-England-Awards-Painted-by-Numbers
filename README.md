@@ -1,6 +1,6 @@
-# <u>**Framing Arts Council England Awards Painted by Numbers**</u>
+# <u>**Arts Council England Awards Painted by Numbers**</u>
 
-*Framing Arts Council England Awards Painted by Numbers* unpacks visual insights from Arts Council England (ACE) National Lottery Project Grants awarded between 2023-2026. 
+*Arts Council England Awards Painted by Numbers* unpacks visual insights from Arts Council England (ACE) National Lottery Project Grants awarded between 2023-2026. 
 
 The purpose of this project is to demonstrate a full analytics workflow - Extract, Transform, Load (ETL), Exploratory Data Analysis (EDA), feature engineering, Machine Learning (ML), and dashboard storytelling to paint a bigger picture on cultural funding patterns across England, diciplines and fundign-streams. 
 
@@ -20,7 +20,7 @@ Details for each column are included on the EXCEL cover page.
 
 ## <u>**Disclaimer**</u>
 
-*Framing Arts Council England Funds Painted by Numbers* is for educational purposes as part of the Code Institute Advanced Data Analytics, Visualisation and Machine Learning Summative Assessment 2. Thus, whilst this project aims to simulate a real world analysis it also integrates skills learned to complete the Data Analytics with AI Skills Diploma. 
+*Arts Council England Funds Painted by Numbers* is for educational purposes as part of the Code Institute Advanced Data Analytics, Visualisation and Machine Learning Summative Assessment 2. Thus, whilst this project aims to simulate a real world analysis it also integrates skills learned to complete the Data Analytics with AI Skills Diploma. 
 
 ## <u>**Business Requirements**</u>
 
@@ -70,7 +70,17 @@ The questions below will move between descriptive and diagnostic analysis to pri
 
 **Outlier Inspection** - Anomolies identified in the statistical overview are inspected to ensure data quality and determine how they should be handled for the machine learning model.  
 
-## Development Roadmap 
+## <u>Dashboard Overview</u>
+
+Three-pages are presented on a Tableau dashboard to translate exploratory data analysis and machine learning findings into accessible visual insights for arts-sector stakeholders. It explores the geographical distribution of ACE National Lottery Project Grants, compares award amounts across artistic disciplines and investigates which categorical features are most influential in predicting award size. Examine potential patterns in public arts funding and provide an evidence base for further discussion about its distribution.
+
+**Page 1 — Where does Arts Council England Fund?** - Explore how ACE National Lottery Project Grants are distributed across geographic areas, highlighting regional differences in award numbers and amounts.
+
+**Page 2 — Funding Across Artforms** - Compare award amounts across main artistic disciplines and funding streams to identify differences in funding levels and variation.
+
+**Page 3 — What Shapes Award Size?** - Use Random Forest feature importance to identify which categorical characteristics contribute most to predicting award size and reveal patterns that intiate further consideration.
+
+## <u>Development Roadmap</u> 
 
 **ETL** intially data types are converted in the notebook. However, missing values identified at the beginning were not handled prior to converting categorical columns into category which meant the time-limited piority column failed to convert from its default string data type. Thus, I took a step back to ensure the values contained in the rows are cleaned. 
 
