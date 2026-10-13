@@ -78,19 +78,26 @@ The Random Forest classification model achieved 39.60% test accuracy, demonstrat
 
 Three-pages are presented on a Tableau dashboard to translate exploratory data analysis and machine learning findings into accessible visual insights for arts-sector stakeholders. It explores the geographical distribution of ACE National Lottery Project Grants, compares award amounts across artistic disciplines and investigates which categorical features are most influential in predicting award size. Examine potential patterns in public arts funding and provide an evidence base for further discussion about its distribution.
 
+https://public.tableau.com/views/ArtsCouncilEnglandAwardsPaintedByNumbers/ACECreativeLandscape?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
 **Page 1 — Mapping ACE Awards** Explore how ACE National Lottery Project Grants are distributed across geographic areas, highlighting regional differences in award numbers and amounts.
 
 <p align="center">
-  <img src="tableau_sheets/1_Sheet_Geographic_Distribution.jpeg" alt="Arts Council England Funding Dashboard" width="800">
+  <img src="/Users/admin/Documents/Code Institute/ace_project/tableau_sheets/1_landscape_of_arts_funding.png" alt="Arts Council England Funding Dashboard" width="800">
 </p>
 
 **Page 2 — Funding Across Artforms** Compare award amounts across main artistic disciplines and funding streams to identify differences in funding levels and variation.
 
 <p align="center">
-  <img src="tableau_sheets/2_sheet_inside_funding_mix.jpeg" alt="Arts Council England Funding Dashboard" width="800">
+  <img src="/Users/admin/Documents/Code Institute/ace_project/tableau_sheets/2_inside_the_funding_mix.png" alt="Arts Council England Funding Dashboard" width="800">
 </p>
 
 **Page 3 — What Shapes Award Size?** Use Random Forest feature importance to identify which categorical characteristics contribute most to predicting award size and reveal patterns that intiate further consideration.
+
+<p align="center">
+  <img src="/Users/admin/Documents/Code Institute/ace_project/tableau_sheets/3_ml_model_performance.png" alt="Arts Council England Funding Dashboard" width="800">
+</p>
+
 
 ## <u>Development Roadmap</u> 
 
