@@ -76,6 +76,12 @@ The questions below will move between descriptive and diagnostic analysis to pri
 
 Data-time columns took a moment to adjust accordingly due to a misunderstanding with built-in Copilot on the task to modify code. Stack Overflow informed me on the difference between <code>normalize()</code> and <code>.dt.date</code> usage. 
 
+## Future Developments
+
+The Random Forest classification model was selected to identify trends in the dataset. However, the models predictive power was limited but does not eliminate the possibility of engineering a Decision Tree model to compare results. 
+
+Once a compatible model is selected and trained a Streamlit app that allows stakeholders to select a different combination of features using a drop down menu could be produced as a product for independent descriptive analytics to identify patterns in past data. 
+
 ## AI Usage
 
 ETL and EDA is predominantly produced using the sources included in the credits section with in-built Copilot modification applied to improve UX design for visualisations and adding comments to code. 
