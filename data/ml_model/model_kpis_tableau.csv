@@ -1,6 +1,0 @@
-Metric,Value,Percentage
-Test Accuracy,0.39596700274977087,39.6
-Test Macro Precision,0.39598076724100456,39.6
-Test Macro Recall,0.3957718731617443,39.58
-Test Macro F1,0.3956274199687346,39.56
-Mean Cross-Validation Macro F1,0.39356375528895443,39.36
