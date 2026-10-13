@@ -70,6 +70,10 @@ The questions below will move between descriptive and diagnostic analysis to pri
 
 **Outlier Inspection** - Anomolies identified in the statistical overview are inspected to ensure data quality and determine how they should be handled for the machine learning model.  
 
+## <u>**Machine Learning Model Review**</u>
+
+The Random Forest classification model achieved 39.60% test accuracy, demonstrating limited ability to distinguish between Low, Medium and High award tiers using ACE area, local authority and main discipline alone. This suggests that the selected features do not capture enough of the complexity behind arts funding outcomes to support reliable automated classification.
+
 ## <u>Dashboard Overview</u>
 
 Three-pages are presented on a Tableau dashboard to translate exploratory data analysis and machine learning findings into accessible visual insights for arts-sector stakeholders. It explores the geographical distribution of ACE National Lottery Project Grants, compares award amounts across artistic disciplines and investigates which categorical features are most influential in predicting award size. Examine potential patterns in public arts funding and provide an evidence base for further discussion about its distribution.
