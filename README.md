@@ -86,6 +86,10 @@ Three-pages are presented on a Tableau dashboard to translate exploratory data a
 
 **Page 2 — Funding Across Artforms** Compare award amounts across main artistic disciplines and funding streams to identify differences in funding levels and variation.
 
+<p align="center">
+  <img src="tableau_sheets/2_sheet_inside_funding_mix.jpeg" alt="Arts Council England Funding Dashboard" width="800">
+</p>
+
 **Page 3 — What Shapes Award Size?** Use Random Forest feature importance to identify which categorical characteristics contribute most to predicting award size and reveal patterns that intiate further consideration.
 
 ## <u>Development Roadmap</u> 
