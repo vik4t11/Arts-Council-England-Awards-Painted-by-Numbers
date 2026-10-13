@@ -168,3 +168,7 @@ With this being said, due to the assessment criteria requirement AI collaboratio
 
 *Preprocessing OneHotEncoder documentation* - https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder
 
+**Tableau Dashboard**
+
+*Layout containers explained* - https://www.youtube.com/watch?v=mAYvayW77Vw
+
