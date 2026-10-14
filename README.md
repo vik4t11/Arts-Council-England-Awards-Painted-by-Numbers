@@ -161,11 +161,11 @@ https://public.tableau.com/views/ArtsCouncilEnglandAwardsPaintedByNumbers/ACECre
 
 Data-time columns took a moment to adjust accordingly due to a misunderstanding with built-in Copilot on the task to modify code. Stack Overflow informed me on the difference between <code>normalize()</code> and <code>.dt.date</code> usage.
 
-## <u>**Project Structure**</u>
-
 ## <u>**Project Management**</u>
 
-A project board was created and reviewed daily to ensure assessment criteria was met in the allocated time-frame.
+A project board was created and reviewed daily to ensure assessment criteria was met in the allocated time-frame. Issues were created including user stories outlining who, what and the benefits for each step. Additional, subissues are included to monitor progress at each stage of the project.
+
+**Project Board Link:** https://github.com/users/vik4t11/projects/7/views/1?filterQuery=-status%3ABacklog
 
 ![ACE Project Board](images/project_board/ace_project_board.jpeg)
 
