@@ -1,8 +1,8 @@
 # <u>**Arts Council England Awards Painted by Numbers**</u>
 
-*Arts Council England Awards Painted by Numbers* unpacks visual insights from Arts Council England (ACE) National Lottery Project Grants awarded between 2023-2026. 
+*Arts Council England Awards Painted by Numbers* unpacks visual insights from Arts Council England (ACE) National Lottery Project Grants awarded between 2023-2024 and 2025-2026. 
 
-The purpose of this project is to demonstrate a full analytics workflow - Extract, Transform, Load (ETL), Exploratory Data Analysis (EDA), feature engineering, Machine Learning (ML), and dashboard storytelling to paint a bigger picture on cultural funding patterns across England, diciplines and fundign-streams. 
+This project demonstrates a full Python-based analytics workflow, covering data extraction, transformation and loading (ETL), exploratory data analysis (EDA), feature engineering, machine learning (ML), and dashboard storytelling to reveal patterns in how cultural funding is distributed across ACE areas, artforms and funding streams for non-technical stakeholders.
 
 ## <u>**Dataset**</u>
 
@@ -14,69 +14,115 @@ The purpose of this project is to demonstrate a full analytics workflow - Extrac
 
 **Format**: EXCEL sheets exported as CSV files 
 
-**Columns**: Recipient, Activity name, Award amount, Decision date, Decision month, Decision quarter, ACE Area, Local authority, Main discipline, Time-Limited Priority. 
+**Columns**: Recipient, activity name, award amount, decision date, decision month, decision quarter, ACE Area, local authority, main discipline and time-Limited Priority. 
 
-Details for each column are included on the EXCEL cover page. 
+## <u>**Ethics and Compliance**</u> 
+
+Data governance principles are considered from the start. Publicly available data is downloaded from the official ACE website. GDPR restricts success rates from being calculated by excluding unsuccessful applicants to comply with ACE publication policy.
+
+Data minimisation is also applied in the ETL notebook by removing columns identifying recipients' names and project details to support responsible data management and privacy protection.
 
 ## <u>**Disclaimer**</u>
 
-*Arts Council England Funds Painted by Numbers* is for educational purposes as part of the Code Institute Advanced Data Analytics, Visualisation and Machine Learning Summative Assessment 2. Thus, whilst this project aims to simulate a real world analysis it also integrates skills learned to complete the Data Analytics with AI Skills Diploma. 
+*Arts Council England Funds Painted by Numbers* was produced for educational purposes as part of the Code Institute Advanced Data Analytics, Visualisation and Machine Learning Summative Assessment 2. While the project aims to simulate a real-world analysis, its primary purpose is to fulfil the requirements of the Data Analytics with AI Skills Diploma.
 
 ## <u>**Business Requirements**</u>
 
-To understand potential patterns, identify differences in distribution of awards and present actionable insights on National Lottery Project Grants for policy-makers, organisations and artists alike in the cultural sector a comprehensive technical analysis meets the business requirements below:
+The technical analysis explores how Arts Council England distributes National Lottery Project Grants, using data analytics, machine learning and visualisation to uncover funding patterns and support informed decision-making across the cultural sector.
 
-1. **Ethical and Compliant** - Data governance principles are considered from the start. Publicly available data dowloaded from the Arts England website is used. There is no record of unsuccessful applications. GDPR restricts success rates being calculated by excluding personal identifiable or financial information to comply with ACE publication policy. An additional anonymisation measure in the ETL notebook removes columns identifying reciptents names and project details to ensure ethical handling of data. 
+**Descriptive Analysis** - The datasets present a record of past funding decisions, showing where money went and how much different disciplines received between 2023-2024 and 2025-2026. The dashboard enables stakeholders to compare awards across ACE areas, main disciplines and funding streams, supporting policy-makers in reviewing regional disparities and for artists to understand the grant landscape.
 
-2. **Descriptive Analysis** - the datasets are a record that tell what has happened in the past. Thus, this analysis is to observe where the money went and how much different diciplines received between 2023-2026. Stakeholders can access a dashboard to unpack selected visualisations from the EDA and ML Modeling notebooks. 
-
-3. **Actionble Insights** - Analytical discoveries translate into practical prompts for decision making. Whilst, a machine learning model assumes to predict future outcomes, it is a tool to understand the past for humans to make decisions in the future. Identifying artforms receiving investment, regional differences, and trends in funding streams can inform strategic outreach efforts, organisations applying for grants and applicants effectively positioning their projects. 
-
-## <u>**Project Plan**</u>
-
-An end‑to‑end analytical workflow, moves from raw data to an insightful dashboard visualisation presenting discoverings during the EDA and a simple machine‑learning model engineered to identify funding patterns.
-
-**Data collection** - Two public accessible ACE National Lottery Project Grants (2023-2024 and 2025-2026) datasets from the Arts Council website are loaded to complete this project. 
-
-**Extract, Transform, Load (ETL)** - Ensuring data integrity prior to analysis includes standardising column names, inspecting and addressing missing, unique or duplicate records. Reviewing DataTypes ensures numerical, date-time and categorical columns are compatible for plotting in the EDA notebook. The final step is to join the two datasets with an additional year column followed by dropping columns containing potential sensitive information to ensure it is compliant with ethical data handling. The DataFrame will be saved into the clean data folder.  
-
-**Exploratory Data Analysis (EDA)** - Patterns for award amounts are explored between ACE areas, main diciplines and funding streams using visuliation libraries - Pandas, NumPy Matplotlib and Seaborn - to plot boxplots, scatterplots, histograms and bar charts. 
-
-**Feature engineering** - The clean joined DataFrame is engineered in the Feature Engineering notebook preperation for the ML Modeling notebook. A multiclass classification model requires award amount to be transformed into a funding tiers target column. Data leakage from columns which can impact the quality of the model are dropped and a model DataFrame file is saved. 
-
-**Machine‑learning model** - A multi-class classification model is trained and tested to predict award amount tiers because the datasets feature mostly categorical and one numerical column. Feature importance is assessed following an accuracy evaluation to understand which attributes determine the target result.  
-
-**Dashboard creation** - A Tableau dashboard frames visualisations and paints the numbers of year-on-year award amounts received between ACE areas, main diciplines and funding streams. Questions raised in the hypothesis are addressed in an accessible interactive storyline connecting the dots. The use of engineering a multi-class machine learning algorithm for stakeholders to identify patterns is also presented with details on model performance.   
+**Actionble Insights** - Analysis of main disciplines, regional differences and funding streams supports informed decision-making. Whilst machine learning explores potential future outcomes, historical patterns can help policy-makers review funding priorities and applicants develop more informed grant applications. These insights inform decisions but do not guarantee future funding outcomes.
 
 ## **Hypothesis**
 
-The instinctual hypothesis motivating this project stems from a familiar question within the arts sector: is ACE awards fairly distributed across regions, artforms and funding‑streams? This assumption reflects anxieties many artists carry when navigating public funding systems.
+The initial hypothesis motivating this project stems from a familiar question within the arts sector: *Are National Lottery Project Grants fairly distributed across regions, artforms and funding streams?*
 
-The questions below will move between descriptive and diagnostic analysis to primarily help understand *why award amounts differ?*
+This project is underpinned by the personal assumption that funding may not be distributed equally across the cultural sector, reflecting concerns many artists face when navigating public funding systems.
 
-1. *Are ACE National Lottery Project Grants unevenly distributed across geographic areas?* We expect to see certain ACE areas to consistently award higher amounts or a greater number of awards compared to other areas. To test this hypothesis award amounts are compared in a univariate and bivariate analysis in the EDA notebook. 
+The following research questions apply descriptive and diagnostic analysis to examine funding patterns and investigate potential factors associated with differences in award amounts.
 
-2. *Do certain main diciplines receive more or less funding than others?* Systemic differences in award amounts are visible between main diciplnes.  
+1. *Are ACE National Lottery Project Grants unevenly distributed across geographic areas?* The hypothesis is that award amounts and grant counts differ across ACE areas. This is investigated through a bivariate analysis in the EDA notebook, alongside Welch’s ANOVA to test whether the differences in mean award amounts between regions are statistically significant.
 
-3. *Can the size of award be predicted using categorical features?* Feature importance will reveal which attributes influence the ML Model prediction and thereby indicate structural patterns in award amounts.
+2. *Do certain main diciplines receive more or less funding than others?* Descriptive analysis compares award amounts across main disciplines to identify differences in funding distribution. Domain knowledge is then applied to interpret these patterns in the context of the cultural sector and consider potential explanations for differences in funding. 
+
+3. *Can a machine-learning model predict award amount tiers with reasonable accuracy using categorical features?* Model accuracy is evaluated to assess how effectively machine learning can automate the prediction of award amount tiers using categorical features. Feature importance is also examined to identify which attributes contribute most to the model's predictions and reveal potential patterns in award amounts.
+
+## <u>**Project Plan**</u>
+
+An end-to-end analytical workflow moves from raw data to an insightful dashboard, presenting discoveries from EDA alongside a simple machine-learning model designed to identify funding patterns.
+
+**Data Collection** - Two publicly accessible ACE National Lottery Project Grants datasets (2023–2024 and 2025–2026) are loaded from the Arts Council website for this project.
+
+**Extract, Transform, Load (ETL)** - Data integrity is ensured prior to analysis by standardising column names and inspecting and addressing missing, unique or duplicate records. Reviewing data types ensures numerical, date-time and categorical columns are compatible with plotting in the EDA notebook. 
+
+The final step joins the two datasets, adds a year column and removes columns containing potentially sensitive information to support responsible data handling. The resulting DataFrame is saved in the clean data folder.
+
+**Exploratory Data Analysis (EDA)** - Award amount patterns are explored across ACE areas, main disciplines and funding streams using Pandas, NumPy, Matplotlib and Seaborn to visualise distributions and differences through boxplots, scatterplots, histograms and bar charts. 
+
+Statistical techniques, including descriptive statistics and Welch’s ANOVA, complement these visualisations by summarising award distributions and testing whether mean award amounts differ significantly between ACE regions.
+
+**Feature Engineering** - The clean, joined DataFrame undergoes further preparation for machine learning. Award amounts are grouped into funding tiers to create the target variable for multiclass classification. Columns that could cause data leakage and affect model quality are dropped, and the model DataFrame is saved.
+
+**Machine‑Learning Model** - A Random Forest classification model is trained to predict award amount tiers (Low, Medium and High), using an 80/20 train-test split and stratified five-fold cross-validation. 
+
+Model performance is evaluated using test accuracy, macro F1-score, precision, recall and a confusion matrix comparing actual and predicted tiers. Feature importance is then assessed to identify which attributes contribute most to the model's predictions.
+
+**Dashboard Creation** - A Tableau dashboard frames visualisations and paints the numbers of year-on-year award amounts across ACE areas, main disciplines and funding streams. The interactive dashboard explores the research hypotheses, connecting the findings to reveal patterns in cultural funding. The dashboard also presents the multiclass machine-learning model's accuracy to assess how effectively it predicts award amount tiers and whether machine learning can identify meaningful patterns in creative funding.
 
 ## <u>**Analysis Techniques Used**</u>
 
-**Statistical Overview** - Numeric statistics are reviewed to identify mean, mode, percentiles and identify anomilies in columns which may require further inspection to ensure data quality and improve model performance.  
+**Descriptive Statistics** - Numerical statistics are reviewed to identify means, modes and percentiles, and to detect anomalies in columns that may require further inspection to ensure data quality and improve model performance. 
 
-**Univariate Analysis** - A histogram, boxplot and barcharts are used to visualise the distribution of awards across different numeric or categorical variables to determine whether National Lottery Project Grants vary between geographic areas and if certain main diciplines receive more or less funding. 
+**Univariate Analysis** - Histograms, boxplots and bar charts are used to visualise the distribution of awards across numerical and categorical variables, exploring differences between geographic areas and whether certain main disciplines receive more or less funding.
 
-**Bivariate Analysis** - Award amounts are visualised to show how much different categories received. This anlysis technique clarifies what was the exact amount recipients received. 
+**Bivariate Analysis** - Award amounts are compared across pairs of variables to examine differences in funding between categories and identify patterns in how much recipients receive.
 
-**Outlier Inspection** - Anomolies identified in the statistical overview are inspected to ensure data quality and determine how they should be handled for the machine learning model.  
+**Outlier Inspection** - Anomalies identified in descriptive statistics are inspected to verify data quality and determine how they should be handled for the machine-learning model.
 
-## <u>**Machine Learning Model Review**</u>
+**Hypothesis Testing** - Welch’s ANOVA is applied to test whether mean award amounts differ significantly across ACE regions. The p-value is used to assess statistical significance and determine whether there is sufficient evidence to reject the null hypothesis.
 
-The Random Forest classification model achieved 39.60% test accuracy, demonstrating limited ability to distinguish between Low, Medium and High award tiers using ACE area, local authority and main discipline alone. This suggests that the selected features do not capture enough of the complexity behind arts funding outcomes to support reliable automated classification.
+## <u>**Hypothesis Validation**</u>
+
+As the project developed, conversations with local artists challenged the original hypothesis, grounding the analysis in lived experience rather than quantitative features alone. These discussions highlighted how funding patterns may reflect the cultural ecosystems artists build around themselves.
+
+For example, Stourbridge’s glassmaking heritage has shaped a distinct creative identity in the Black Country, whilst Birmingham’s heavy-metal legacy has produced generations of musicians. These local histories help explain how clusters of artistic activity emerge.
+
+Above all, the project highlighted that data, whilst insightful, is not neutral. Patterns can be interpreted differently depending on the storyteller’s perspective, agenda or assumptions. Relying solely on statistical outputs or machine-learning predictions risked reinforcing bias by allowing initial assumptions to shape the narrative rather than the evidence.
+
+**Are ACE National Lottery Project Grants unevenly distributed across geographic areas?**
+
+**Result:** Supported 
+**Summary:** Welch’s ANOVA rejected the null hypothesis that mean award amounts are equal across ACE regions, providing statistical evidence of differences between regional averages.
+
+The visual analysis also supports this finding, showing variation in award amounts despite positively skewed distributions.
+
+However, these differences do not necessarily indicate unfair funding distribution. Further investigation considered potential explanations, including ACE’s strategic allocation of funding to areas in need and London’s higher population density, which may contribute to differences in the number of awards.
+
+**Do certain main diciplines receive more or less funding than others?**
+
+**Result:** Supported
+**Summary:** Boxplots and barcharts show variation in award amounts across main disciplines. Theatre, Music and Dance appear to have higher award amounts, whilst Digital Arts appears to have lower award amounts in the dataset.
+
+Based on domain knowledge of the arts sector, these differences may reflect the varied cost structures of creative practice, from large-scale theatre productions to small-scale independent artistic development. 
+
+Nonetheless, this remains a potential explanation rather than a conclusion established by the visualisation and further investigation would be needed to establish the reasons for these differences.
+
+
+**Can a machine-learning model predict award amount tiers with reasonable accuracy using categorical features?**
+
+**Result:** Unsupported 
+**Summary:** The Random Forest classifier achieved a test accuracy of 39.60% and a macro F1-score of 39.56%. The confusion matrix showed that the model correctly classified 41.4% of Low-tier projects, 40.2% of Medium-tier projects and 37.2% of High-tier projects. These results indicate limited predictive performance, with substantial misclassification across all three award tiers.
+
+Main discipline and ACE area were identified as influential predictors within the model. However, these rankings do not establish causation or explain individual funding decisions.
+
+The results do not support using this model to reliably predict award amount tiers. Instead, they demonstrate the limitations of predicting complex cultural funding outcomes using a restricted set of categorical features.
 
 ## <u>Dashboard Overview</u>
 
-Three-pages are presented on a Tableau dashboard to translate exploratory data analysis and machine learning findings into accessible visual insights for arts-sector stakeholders. It explores the geographical distribution of ACE National Lottery Project Grants, compares award amounts across artistic disciplines and investigates which categorical features are most influential in predicting award size. Examine potential patterns in public arts funding and provide an evidence base for further discussion about its distribution.
+Three pages are presented in a Tableau dashboard, translating exploratory data analysis and machine-learning findings into accessible visual insights for arts-sector stakeholders. The dashboard explores the geographical distribution of ACE National Lottery Project Grants, compares award amounts across artistic disciplines and presents model evaluation metrics.
+
+Together, these visualisations examine potential patterns in public arts funding and provide an evidence base for further discussion about its distribution.
 
 https://public.tableau.com/views/ArtsCouncilEnglandAwardsPaintedByNumbers/ACECreativeLandscape?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
