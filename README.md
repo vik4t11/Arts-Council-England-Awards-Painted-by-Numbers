@@ -136,9 +136,8 @@ Together, these visualisations examine potential patterns in public arts funding
 - Tooltips to view average and median award sizes. 
 - Simple UX design to optimise visual clarity. 
 
-
 **Live Dashboard Link:**
-https://public.tableau.com/views/ArtsCouncilEnglandAwardsPaintedByNumbers/ACECreativeLandscape?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+https://public.tableau.com/app/profile/viktoria.tchibor/viz/ArtsCouncilEnglandAwardsPaintedByNumbers
 
 #### **Dashboard Pages**
 
@@ -206,6 +205,14 @@ ETL and EDA is predominantly produced using the sources included in the credits 
 In the ML Model notebook Chat GPT and Copilot support the majority of the workflow to write code and interpret results. This challenged my original intention to reduce scraping the internet from websites such as Stack Overflow who are impacted by the lack of credit to engineers who wrote original code. 
 
 With this being said, due to the assessment criteria requirement AI collaboration is clearly demonstrated to speed up the process, which would reduce timely costs for organisations and help them reach their business requirements much quicker with advanced AI accessibility.
+
+## <u>**Ethical Considerations**</u>
+
+Random Forest and other tree‑based models used in this project are topic‑agnostic: they treat creative‑sector data the same way they would treat any other domain, meaning the interpretation of their outputs depends heavily on the analyst’s narrative lens. Without human context, these models could unintentionally reinforce bias‑driven interpretations.
+
+To avoid this, I combined quantitative analysis with cultural context and human insight, recognising that creative practice cannot be reduced to topic‑agnostic modelling. This approach ensures the project remains legally compliant, ethically grounded, and sensitive to the societal realities of the arts sector.
+
+This project also acknowledges the ethical challenge of applying machine‑learning models to creative practice. Artistic work is nuanced and culturally embedded, and reducing it to categorical features risks oversimplification.
 
 ## <u>**Credits**</u> 
 
