@@ -92,7 +92,8 @@ Above all, the project highlighted that data, whilst insightful, is not neutral.
 
 **Are ACE National Lottery Project Grants unevenly distributed across geographic areas?**
 
-**Result:** Supported 
+**Result:** Supported
+
 **Summary:** Welch’s ANOVA rejected the null hypothesis that mean award amounts are equal across ACE regions, providing statistical evidence of differences between regional averages.
 
 The visual analysis also supports this finding, showing variation in award amounts despite positively skewed distributions.
@@ -102,6 +103,7 @@ However, these differences do not necessarily indicate unfair funding distributi
 **Do certain main diciplines receive more or less funding than others?**
 
 **Result:** Supported
+
 **Summary:** Boxplots and barcharts show variation in award amounts across main disciplines. Theatre, Music and Dance appear to have higher award amounts, whilst Digital Arts appears to have lower award amounts in the dataset.
 
 Based on domain knowledge of the arts sector, these differences may reflect the varied cost structures of creative practice, from large-scale theatre productions to small-scale independent artistic development. 
@@ -111,7 +113,8 @@ Nonetheless, this remains a potential explanation rather than a conclusion estab
 
 **Can a machine-learning model predict award amount tiers with reasonable accuracy using categorical features?**
 
-**Result:** Unsupported 
+**Result:** Unsupported
+
 **Summary:** The Random Forest classifier achieved a test accuracy of 39.60% and a macro F1-score of 39.56%. The confusion matrix showed that the model correctly classified 41.4% of Low-tier projects, 40.2% of Medium-tier projects and 37.2% of High-tier projects. These results indicate limited predictive performance, with substantial misclassification across all three award tiers.
 
 Main discipline and ACE area were identified as influential predictors within the model. However, these rankings do not establish causation or explain individual funding decisions.
@@ -120,21 +123,34 @@ The results do not support using this model to reliably predict award amount tie
 
 ## <u>Dashboard Overview</u>
 
-Three pages are presented in a Tableau dashboard, translating exploratory data analysis and machine-learning findings into accessible visual insights for arts-sector stakeholders. The dashboard explores the geographical distribution of ACE National Lottery Project Grants, compares award amounts across artistic disciplines and presents model evaluation metrics.
+A Tableau dashboard was designed to translate exploratory data analysis and machine-learning insights into accessible visual insights for arts-sector stakeholders. The dashboard explores the geographical distribution of ACE National Lottery Project Grants, compares award amounts across artistic disciplines and presents model evaluation metrics.
 
 Together, these visualisations examine potential patterns in public arts funding and provide an evidence base for further discussion about its distribution.
 
+#### **Dashboard Features**
+
+- Funding analysis between geographic and artform.
+- Model performance evaluation metrics. 
+- KPI cards to highlight numeric summaries.
+- Interactive filtering and slicing between years, regions and funding streams.
+- Tooltips to view average and median award sizes. 
+- Simple UX design to optimise visual clarity. 
+
+
+**Live Dashboard Link:**
 https://public.tableau.com/views/ArtsCouncilEnglandAwardsPaintedByNumbers/ACECreativeLandscape?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
-**Page 1 — Mapping ACE Awards** Explore how ACE National Lottery Project Grants are distributed across geographic areas, highlighting regional differences in award numbers and amounts.
+#### **Dashboard Pages**
+
+**Page 1 — Does where you are influence how much funding you receive?** Explore how ACE National Lottery Project Grants are distributed across geographic areas, highlighting regional differences in award numbers and amounts.
 
 ![Arts Council England Funding Dashboard](./tableau_sheets/1_landscape_of_arts_funding.jpeg)
 
-**Page 2 — Funding Across Artforms** Compare award amounts across main artistic disciplines and funding streams to identify differences in funding levels and variation.
+**Page 2 — What does funding patterns look like across artforms?** Compare award amounts across main artistic disciplines and funding streams to identify differences in funding levels and variation.
 
 ![Arts Council England Funding Dashboard](./tableau_sheets/2_inside_the_funding_mix.jpeg)
 
-**Page 3 — What Shapes Award Size?** Use Random Forest feature importance to identify which categorical characteristics contribute most to predicting award size and reveal patterns that intiate further consideration.
+**Page 3 — Can Machine Learning make sense of creative funding?** Random Forest model evaluation metrics are displayed to determine whether funding patterns can be reliably made using categorical features.
 
 ![Arts Council England Funding Dashboard](./tableau_sheets/3_ml_model_performance.jpeg)
 
@@ -143,13 +159,43 @@ https://public.tableau.com/views/ArtsCouncilEnglandAwardsPaintedByNumbers/ACECre
 
 **ETL** intially data types are converted in the notebook. However, missing values identified at the beginning were not handled prior to converting categorical columns into category which meant the time-limited piority column failed to convert from its default string data type. Thus, I took a step back to ensure the values contained in the rows are cleaned. 
 
-Data-time columns took a moment to adjust accordingly due to a misunderstanding with built-in Copilot on the task to modify code. Stack Overflow informed me on the difference between <code>normalize()</code> and <code>.dt.date</code> usage. 
+Data-time columns took a moment to adjust accordingly due to a misunderstanding with built-in Copilot on the task to modify code. Stack Overflow informed me on the difference between <code>normalize()</code> and <code>.dt.date</code> usage.
 
-## Future Improvements
+## <u>**Project Structure**</u>
 
-The Random Forest classification model was selected to identify trends in the dataset. However, the models predictive power was limited but does not eliminate the possibility of engineering a Decision Tree model to compare results. 
+## <u>**Project Management**</u>
 
-Once a compatible model is selected and trained a Streamlit app that allows stakeholders to select a different combination of features using a drop down menu could be produced as a product for independent descriptive analytics to identify patterns in past data. 
+A project board was created and frequently reviewed to ensure assessment criteria was met in the allocated time-frame to complete the end-to-end workflow. 
+
+## <u>**Technologies Used**</u>
+
+#### **Analysis Tools**
+
+- *Python:* Programming language used for coding ETL, EDA, Feature Engineering and Machine Learning Model notebooks.
+- *Jupyter Notebooks:* documentation tool to run and explain code cells.
+- *Pandas:* data manipulation, cleaning, analysis and DataFrames.
+- *NumPy:* numerical computing, arrays and mathematical operations.
+- *Matplotlib:* creating charts and data visualisations.
+- *Seaborn:* statistical visualisations built on Matplotlib.
+- *Scikit-learn:* machine learning, preprocessing, model training and evaluation.
+- *SciPy:* scientific computing, statistics, optimisation and advanced mathematics.
+
+#### **Dashboarding**
+
+- *Tableau Public:* used to design an interactive dashboard for non-technical stakeholders to explore insights on National Lottery Project Grants. 
+
+#### **Version Control**
+
+- *Git:* version control tool to commit changes made on the project.
+- *GitHub:* repository host and project board management. 
+
+## <u>**Improvements**</u>
+
+The Random Forest classification model was selected to identify trends in the dataset. The models performance was limited but does not eliminate the possibility of engineering a Decision Tree model to compare results. 
+
+Once a compatible model is selected and trained a Streamlit app that allows stakeholders to select a different combination of features using a drop down menu could be produced as a product for independent descriptive analytics to identify patterns in past data.
+
+A map to plot the award distributions across ACE regions would require an additional DataFrame to define the borders for visualisation on Tableau.
 
 ## AI Usage
 
