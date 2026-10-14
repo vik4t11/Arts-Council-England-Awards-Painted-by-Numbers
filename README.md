@@ -145,7 +145,7 @@ https://public.tableau.com/views/ArtsCouncilEnglandAwardsPaintedByNumbers/ACECre
 
 Data-time columns took a moment to adjust accordingly due to a misunderstanding with built-in Copilot on the task to modify code. Stack Overflow informed me on the difference between <code>normalize()</code> and <code>.dt.date</code> usage. 
 
-## Future Developments
+## Future Improvements
 
 The Random Forest classification model was selected to identify trends in the dataset. However, the models predictive power was limited but does not eliminate the possibility of engineering a Decision Tree model to compare results. 
 
@@ -223,3 +223,14 @@ With this being said, due to the assessment criteria requirement AI collaboratio
 
 *Layout containers explained* - https://www.youtube.com/watch?v=mAYvayW77Vw
 
+*Visualising KPIs* - https://help.tableau.com/current/pro/desktop/en-us/kpi.htm
+
+*Data visualisation designs* - https://www.tableau.com/blog/most-favorited-data-visualizations-tableau-public
+
+**Other**
+
+*README layout* - https://github.com/RNB1993/predictive-employee-attrition-modelling
+
+*Ethical consideration* - https://www.channel4.com/programmes/molly-vs-the-machines
+
+*Critical use of generative AI* - https://subjectguides.york.ac.uk/critical/ai
