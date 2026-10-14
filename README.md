@@ -34,7 +34,7 @@ The technical analysis explores how Arts Council England distributes National Lo
 
 **Actionble Insights** - Analysis of main disciplines, regional differences and funding streams supports informed decision-making. Whilst machine learning explores potential future outcomes, historical patterns can help policy-makers review funding priorities and applicants develop more informed grant applications. These insights inform decisions but do not guarantee future funding outcomes.
 
-## **Hypothesis**
+## <u>**Hypothesis**</u>
 
 The initial hypothesis motivating this project stems from a familiar question within the arts sector: *Are National Lottery Project Grants fairly distributed across regions, artforms and funding streams?*
 
@@ -199,7 +199,7 @@ Once a compatible model is selected and trained a Streamlit app that allows stak
 
 A map to plot the award distributions across ACE regions would require an additional DataFrame to define the borders for visualisation on Tableau.
 
-## AI Usage
+## <u>**AI Usage**</u>
 
 ETL and EDA is predominantly produced using the sources included in the credits section with in-built Copilot modification applied to improve UX design for visualisations and adding comments to code. 
 
@@ -207,7 +207,7 @@ In the ML Model notebook Chat GPT and Copilot support the majority of the workfl
 
 With this being said, due to the assessment criteria requirement AI collaboration is clearly demonstrated to speed up the process, which would reduce timely costs for organisations and help them reach their business requirements much quicker with advanced AI accessibility.
 
-## Credits 
+## <u>**Credits**</u> 
 
 **Extract, Transform and Load**
 
@@ -282,3 +282,11 @@ With this being said, due to the assessment criteria requirement AI collaboratio
 *Ethical consideration* - https://www.channel4.com/programmes/molly-vs-the-machines
 
 *Critical use of generative AI* - https://subjectguides.york.ac.uk/critical/ai
+
+## <u>**Acknowledgements**</u>
+
+I acknowledge and appreciate the use of ChatGPT, Gemini and GitHub Copilot throughout this project. 
+
+Thank you to Mike for encouraging me to join Code Institute and Laura for supporting me to secure a place on the course. Thank you to my tutor Emma for teaching me there is, in fact, method in the madness. 
+
+I'm grateful for the wellbeing support from my friend Patsy and the Ivkos for accommodating me throughout the learning process. 
