@@ -165,7 +165,9 @@ Data-time columns took a moment to adjust accordingly due to a misunderstanding 
 
 ## <u>**Project Management**</u>
 
-A project board was created and frequently reviewed to ensure assessment criteria was met in the allocated time-frame to complete the end-to-end workflow. 
+A project board was created and reviewed daily to ensure assessment criteria was met in the allocated time-frame.
+
+![ACE Project Board](images/project_board/ace_project_board.jpeg)
 
 ## <u>**Technologies Used**</u>
 
