@@ -144,15 +144,15 @@ https://public.tableau.com/views/ArtsCouncilEnglandAwardsPaintedByNumbers/ACECre
 
 **Page 1 — Does where you are influence how much funding you receive?** Explore how ACE National Lottery Project Grants are distributed across geographic areas, highlighting regional differences in award numbers and amounts.
 
-![Arts Council England Funding Dashboard](./tableau_sheets/1_landscape_of_arts_funding.jpeg)
+![Arts Council England Funding Dashboard](images/tableau_sheets/1_landscape_of_arts_funding.jpeg)
 
 **Page 2 — What does funding patterns look like across artforms?** Compare award amounts across main artistic disciplines and funding streams to identify differences in funding levels and variation.
 
-![Arts Council England Funding Dashboard](./tableau_sheets/2_inside_the_funding_mix.jpeg)
+![Arts Council England Funding Dashboard](images/tableau_sheets/2_inside_the_funding_mix.jpeg)
 
 **Page 3 — Can Machine Learning make sense of creative funding?** Random Forest model evaluation metrics are displayed to determine whether funding patterns can be reliably made using categorical features.
 
-![Arts Council England Funding Dashboard](./tableau_sheets/3_ml_model_performance.jpeg)
+![Arts Council England Funding Dashboard](images/tableau_sheets/3_ml_model_performance.jpeg)
 
 
 ## <u>Development Roadmap</u> 
@@ -165,7 +165,7 @@ Data-time columns took a moment to adjust accordingly due to a misunderstanding 
 
 A project board was created and reviewed daily to ensure assessment criteria was met in the allocated time-frame. Issues were created including user stories outlining who, what and the benefits for each step. Additional, subissues are included to monitor progress at each stage of the project.
 
-**Project Board Link:** https://github.com/users/vik4t11/projects/7/views/1?filterQuery=-status%3ABacklog
+**Project Board Link:** https://github.com/users/vik4t11/projects/7
 
 ![ACE Project Board](images/project_board/ace_project_board.jpeg)
 
